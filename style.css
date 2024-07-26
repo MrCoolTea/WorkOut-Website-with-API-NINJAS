@@ -1,0 +1,314 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Anton", sans-serif;
+  box-sizing: border-box; 
+}
+:root {
+  --background-color: #fff;
+  --text-color: #555;
+  --title-color: #000;
+}
+.dark-theme {
+  --background-color: #000;
+  --text-color: #999;
+  --title-color: #fff;
+}
+
+body { 
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.8s, color 0.8s;
+}
+
+.header {
+  width: 100%;
+  min-height: auto;
+  padding: 0 4%;
+  position: relative;
+  overflow: hidden;  
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.logo {
+  width: 80px;
+  text-decoration: none;
+}
+.logo h1 {
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  color: var(--title-color);
+  font-weight: 700;
+}
+.header-content ul {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+.header-content ul li {
+  display: inline-block;
+  margin: 5px 120px;
+  font-size: 20px;
+}
+.header-content ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.toggle-btn {
+  background: #4864ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.toggle-btn img {
+  width: 25px;
+  margin-left: 10px;
+}
+.hero {
+  padding: 0 2%;
+}
+.banner {
+  background-image: url("../images/barbell.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  text-align: left;
+  font-size: 70px;
+  padding-inline: 100px;
+  border-radius: 8px;
+}
+.banner-content {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.banner-content-healthy {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: red;
+}
+.container {
+  display: columns;
+}
+.section-tab {
+  border-radius: 100px;
+  padding: 0 5%;
+}
+.tab-list {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tab-list button{
+ border: none;
+ color: var(--text-color);
+ background: none;
+ text-align: center;
+ font-size: 20px;
+ padding: 15px 32px;
+ transition-duration: 0.3s;
+ width: 250px;
+}
+.tab-list button:hover {
+  background-color: grey;
+  color: white;
+}
+.grid-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  height: 240px;
+}
+.grid-list-content {
+  position: relative;
+}
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+.workout-images {
+  width: 100%;
+  height: 100%;
+}
+#workout-figure1 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure2 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure3 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure4 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure5 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure6 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure7 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure8 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure9 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+#workout-figure10 {
+  position: relative;
+  z-index: 1;
+  padding: 10px; 
+}
+.figure-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-list-second {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  height: 240px;
+}
+.grid-list div {
+  background: #faf9f5;
+  width: 200px;
+  border-radius: 8px;
+}
+.grid-list-second div {
+  background: #faf9f5;
+  width: 200px;
+  border-radius: 8px;
+}
+.See-More {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.seebtn a{
+  justify-content: center;
+  align-items: center; 
+  border: none;
+  width: 500px;
+  background: none;
+}
+.see-more-link {
+  color: var(--text-color);
+  border: none;
+  background: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 32px;
+  transition-duration: 0.3s;
+  width: 500px;
+  display: flex;
+}
+.See-More button:hover {
+  background-color: grey;
+  color: white;
+}
+.See-More a:hover {
+  background-color: grey;
+  color: white;
+}
+.grid-list-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 .5%;
+  padding-bottom: .5%;
+}
+.bookmark {
+  border: none;
+  decoration: none;
+  padding: 0;
+  color: var(--text-color);
+  cursor: pointer;
+  position: relative;
+}
+.bookmark:hover {
+  background: grey;
+}
+.bookmark img{
+  width: 25px;
+  height: 23px;
+  left: 0;
+  top: 0;
+}
+.mark2 {
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+.mark2:hover {
+  opacity: 1;
+}
+.footer {
+  background: #faf9f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+  margin-top: 30px;
+}
+.footer-home {
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-logo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.img-logo {
+  width: 50px;
+  height: 50px;
+}
+.logo-footer {
+  color: var(--text-color);
+  width: 80px;
+  text-decoration: none;
+}
